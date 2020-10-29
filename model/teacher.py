@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torchvision
-
+from utils import *
 
 class VNect(nn.Module) :
     """
@@ -106,21 +106,3 @@ class VNect(nn.Module) :
         return x * y 
     
     
-class resnet50_extractor(nn.Module) :
-    """
-        Class that loads pretrained resnet50 from torchvision 
-              and returns feature map from res4f layer.
-    """
-    
-    def __init__(self, finetune=False) :
-        super(resnet50_extractor, self).__init__()
-
-        original_model = torchvision.models.resnet50(pretrained=not finetune)
-        self.extractor = torch.nn.Sequential(*list(original_model.children())[:-3])
-        
-        for param in self.extractor.parameters() :
-            param.requires_grad = finetune
-    
-    def forward(self, x) :
-        return self.extractor(x)
-
