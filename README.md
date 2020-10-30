@@ -9,19 +9,19 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
 - Ubuntu 18.04
 
 ### Files
-.
+.  
 |____README.md  
 |____model  
-| |____student.py  
-| |____teacher.py  
-| |____utils.py  
+  |____student.py  
+  |____teacher.py  
+  |____utils.py  
 |____utils  
-| |____loss.py  
-| |____dataloader.py  
+  |____loss.py  
+  |____dataloader.py  
 |____data  
-| |____dummy.png  
-| |____VNect.png  
-| |____MoVNect.png  
+  |____dummy.png  
+  |____VNect.png  
+  |____MoVNect.png  
 |____test.py  
 |____train.py  
 
