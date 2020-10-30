@@ -9,6 +9,7 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
 - Ubuntu 18.04
 
 ### Files
+```
 .  
 |____README.md  
 |____model  
@@ -24,7 +25,7 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
   |____MoVNect.png  
 |____test.py  
 |____train.py  
-
+```
 
 ### Networks
 1. **VNect** - teacher network
