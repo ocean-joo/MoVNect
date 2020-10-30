@@ -8,6 +8,23 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
 - CUDA 11.0
 - Ubuntu 18.04
 
+### Files
+.
+|____README.md
+|____model
+| |____student.py
+| |____teacher.py
+| |____utils.py
+|____utils
+| |____loss.py
+| |____dataloader.py
+|____data
+| |____dummy.png
+| |____VNect.png
+| |____MoVNect.png
+|____test.py
+|____train.py
+
 
 ### Networks
 1. **VNect** - teacher network
@@ -20,7 +37,7 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
 
 
 ### TODO
-I implemented network architecture, but there are some functionalities should be implemented to work properly.
+I implemented network architecture, but there are some more functionalities should be implemented to work properly.
 1. train.py
     - Before training student network, teacher network should be pretrained.
     - pretrain network for 2D pose estimation with 2D pose dataset, and fine-tune 3D pose estimation with 3D pose dataset.
