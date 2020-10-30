@@ -10,10 +10,6 @@ parser.add_argument('--batch-size', dest='batch-size', type=int, default=4, help
 args = parser.parse_args()
 
 # # TODO
-# To train student network, teacher network should be pretrained.
-# Teacher network(VNect) is pretrained for 2D pose estimation on MPII dataset.
-# And for 3D pose, Human3.6m dataset is used.
-
-# The same goes for student network. 
-# For generalizability, student network should be pretrained with 2d pose data.
-# (Because most 3d data consist of indoor images)
+#    - implement distillation network part
+#    - pretrain network 2D pose estimation part with 2D pose dataset
+#    - train pretrained network 3D pose estimation part with 3D pose dataset
