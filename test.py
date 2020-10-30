@@ -7,4 +7,4 @@ def inference(model, img) :
 
 
 def main() :
-    pass
+    model = MovNect()
