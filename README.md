@@ -38,11 +38,11 @@ Implementation of paper **["Lightweight 3D Human Pose Estimation Network Trainin
 
 
 ### TODO
-I implemented network architecture, but there are some more functionalities should be implemented to work properly.
+I implemented network architecture, but there are some more functionalities that should be implemented to work properly.
 1. train.py
-    - Before training student network, teacher network should be pretrained.
-    - pretrain network for 2D pose estimation with 2D pose dataset, and fine-tune 3D pose estimation with 3D pose dataset.
+    - To student network, teacher network must be pretrained.
+    - Pretrain network for 2D pose estimation with 2D pose dataset, and fine-tune 3D pose estimation with 3D pose dataset.
 2. test.py
     - inference and various evaluation metric.
 3. dataloader.py
-    - dataloader should support MPII dataset and Human3.6M at least.
+    - dataloader should support at least MPII dataset and Human3.6M dataset.
